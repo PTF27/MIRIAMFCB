@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07152f">
+<title>Blaugrana — Mi rincón culé</title>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<video class="video-bg" autoplay muted loop playsinline poster="assets/estadio.jpg">
+  <source src="https://i.imgur.com/6D8uUpQ.mp4" type="video/mp4">
+</video>
+<div class="shade"></div>
+
+<section id="welcome" class="welcome">
+  <div class="welcome-content">
+    <img src="https://i.imgur.com/WvpCEHV.png" alt="Descripción de la imagen" class="mi-imagen">
+    <p class="eyebrow">XATSPACE</p>
+    <h1><span> MIRIAM BLAUGRANA</span></h1>
+    <p class="welcome-copy">Pasión, música y orgullo culé.</p>
+    <button id="enterBtn" class="enter-btn">ENTRAR</button>
+  </div>
+</section>
+
+<div id="app" class="app hidden">
+  <aside class="sidebar">
+    <img src="https://i.imgur.com/HDjq8Ea.png" alt="Descripción de la imagen" class="mi-imagen">
+    <p class="side-label">MI ESPACIO</p>
+    <button class="nav-btn active" data-page="about"><span class="nav-icon">◉</span><span>Sobre mí</span></button>
+    <button class="nav-btn" data-page="music"><span class="nav-icon">♫</span><span>Música</span></button>
+       <div class="sidebar-bottom">VISCA EL BARÇA <span>♥</span></div>
+  </aside>
+
+  <main class="main">
+    <section class="page active" id="page-about">
+      <div class="section-heading"><p class="eyebrow">CONÓCEME UN POCO</p><h2>Sobre <span>mí</span></h2><div class="heading-line"></div></div>
+      <div class="about-grid glass">
+        <div class="bio">         
+          <h3>¡Hola, culé!</h3>
+          <p>Miriam GM🤟🏻💅🏻🫦</br>Dando guerra desde... 17/11/1993 🤪</br>👩‍⚕️ Tcae 🤍</br> DiamondsGirls ♾️✨</br>Sentimiento Blaugrana ❤️💙</br>Sé feliz, no aceptas menos 👌🏻😊</p>
+          <p class="signoff">Força Barça. <span>♥</span></p>
+        </div>
+        <div class="portrait-wrap">
+          <div class="light-beam"></div>
+          <img class="portrait" src="https://i.imgur.com/XlxdytW.jpeg" alt="Retrato personal de ejemplo">
+          </div>
+      </div>
+    </section>
+
+    <section class="page" id="page-music">
+      <div class="section-heading"><p class="eyebrow">DALE AL PLAY</p><h2>Mi <span>música</span></h2><div class="heading-line"></div></div>
+      <div class="music-layout glass">
+        <div class="player-visual">
+          <div class="sound-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+         <img src="https://i.imgur.com/HDjq8Ea.png alt="Descripción de la imagen" class="mi-imagen">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <p class="player-kicker">BLAUGRANA SOUND SYSTEM</p>
+        </div>
+        <div class="player-controls">
+          <p class="tag">REPRODUCTOR </p>
+          <h3 id="trackTitle">Canción 01</h3>
+          <p id="trackArtist" class="track-artist">Tu artista favorito</p>
+          <audio id="audio" preload="metadata"></audio>
+          <div class="progress-row"><span id="currentTime">0:00</span><input id="progress" type="range" min="0" max="100" value="0" aria-label="Progreso de la canción"><span id="duration">0:00</span></div>
+          <div class="controls">
+            <button id="prevBtn" class="control-btn" aria-label="Canción anterior">⏮</button>
+            <button id="playBtn" class="play-btn" aria-label="Reproducir">▶</button>
+            <button id="nextBtn" class="control-btn" aria-label="Canción siguiente">⏭</button>
+          </div>
+          <div class="playlist" id="playlist"></div>
+          </div>
+      </div>
+    </section>    
+  </main>
+  <div class="clock glass"><div class="clock-top"><img src="https://i.imgur.com/OUw9Sy4.png" alt="Descripción de la imagen" class="mi-imagen"><span class="live-dot"></span></div><div id="clockTime" class="clock-time">00:00:00</div><div id="clockDate" class="clock-date">Cargando fecha…</div></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
